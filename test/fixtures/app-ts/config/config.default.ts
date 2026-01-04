@@ -20,8 +20,8 @@ export default (appInfo: EggAppInfo) => {
   config.serverTimeout = 2 * 60 * 1000;
 
   config.passportWeibo = {
-    key: process.env.EGG_PASSPORT_WEIBO_CLIENT_ID as string,
-    secret: process.env.EGG_PASSPORT_WEIBO_CLIENT_SECRET as string,
+    key: (process.env.EGG_PASSPORT_WEIBO_CLIENT_ID as string) || 'weibo-client-id',
+    secret: (process.env.EGG_PASSPORT_WEIBO_CLIENT_SECRET as string) || 'weibo-client-secret',
   };
 
   config.passportTwitter = {

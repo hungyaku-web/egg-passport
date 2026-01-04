@@ -3,8 +3,8 @@
 exports.keys = 'foo';
 
 exports.passportWeibo = {
-  key: process.env.EGG_PASSPORT_WEIBO_CLIENT_ID,
-  secret: process.env.EGG_PASSPORT_WEIBO_CLIENT_SECRET,
+  key: process.env.EGG_PASSPORT_WEIBO_CLIENT_ID || 'weibo-client-id',
+  secret: process.env.EGG_PASSPORT_WEIBO_CLIENT_SECRET || 'weibo-client-secret',
 };
 
 exports.passportTwitter = {

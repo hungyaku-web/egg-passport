@@ -5,6 +5,7 @@
     "module": "commonjs",
     "strict": true,
     "noImplicitAny": false,
-    "skipLibCheck": true
+    "skipLibCheck": true,
+    "types": []
   }
 }
