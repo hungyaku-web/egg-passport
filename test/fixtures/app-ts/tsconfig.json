@@ -4,6 +4,7 @@
     "baseUrl": ".",
     "module": "commonjs",
     "strict": true,
-    "noImplicitAny": false
+    "noImplicitAny": false,
+    "skipLibCheck": true
   }
 }
